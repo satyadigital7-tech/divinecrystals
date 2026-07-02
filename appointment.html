@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Astrology</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- stylesheet -->
+    
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/plugin/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/js/plugin/airdatepicker/datepicker.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/js/plugin/select2/select2.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/fonts.css"/>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="as_loader">
+        <img src="assets/images/loader.png" alt="" class="img-responsive">
+    </div>
+    <div class="as_main_wrapper">
+        <section class="as_header_wrapper">
+            <div class="as_logo">
+                <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+            </div>
+            <div class="as_header_detail">
+                <div class="as_info_detail">
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="as_infobox">
+                                    <span class="as_infoicon">
+                                        <img src="assets/images/svg/headphone.svg" alt="">
+                                    </span>
+                                <span class="as_orange">Talk to our Astrogers -</span>+91 8082937245
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="as_infobox">
+                                    <span class="as_infoicon">
+                                        <img src="assets/images/svg/mail1.svg" alt="">
+                                    </span>
+                                <span class="as_orange">Talk to our Astrogers -</span>support@website.com
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="as_menu_wrapper">
+                    <span class="as_toggle">
+                        <img src="assets/images/svg/menu.svg" alt="">
+                    </span>
+                    <div class="as_menu">
+                        <ul>
+                            <li><a href="index.html">home</a></li>
+                            <li><a href="about.html">about</a></li>
+                            <li><a href="service.html">services</a></li>
+                            <li><a href="appointment.html" class="active">appointment</a></li>
+                            <li><a href="products.html">Products</a>
+                            </li>
+                            <li><a href="contact.html">contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <span class="as_body_overlay"></span>
+            </div>  
+        </section> 
+        <section class="as_breadcrum_wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h1>Appointment</h1> 
+
+                        <ul class="breadcrumb"> 
+                            <li><a href="#">Home</a></li>
+                            <li>Appointment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="as_appointment_wrapper as_padderTop80 as_padderBottom80">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="as_heading as_heading_center text-center">Make Your Appointment To Discuss Any Problem.</h2>
+                        <p class="as_font14 as_padderBottom10 text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+                        <p class="as_font14 as_padderBottom20 text-center">It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p> 
+
+
+
+                        <div class="as_journal_box_wrapper">
+                            <form>
+                                <h3 class="text-center as_subheading">Appointment Form</h3>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <label>name</label>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="Name" id="app_name">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <label>email</label>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="Email" id="app_email">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <label>mobile number</label>
+                                    
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="Mobile Number" id="app_mobile">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <label>gender</label>
+                                    <div class="form-group as_select_box">
+                                        <select class="form-control" data-placeholder="Gender" id="app_gender">
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                        </select>
+                                    </div> 
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <label>time of day</label>
+                                    <div class="form-group as_select_box" data-placeholder="Time of day">
+                                        <select class="form-control" id="app_timeofday">
+                                            <option value="Morning"> Morning </option>
+                                            <option value="Afternoon">Afternoon</option>
+                                            <option value="Evening">Evening </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <label>way to reach</label>
+                                    <div class="form-group as_select_box" data-placeholder="Way to reach">
+                                        <select class="form-control" id="app_reach">
+                                            <option value="Phone">Phone </option>
+                                            <option value="Email">Email</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <label>Preferred  Date</label>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" placeholder="Date" id="app_date">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" placeholder="Month" id="app_month">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" placeholder="Year" id="app_year">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <label>Preferred Time</label>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" placeholder="Hrs" id="app_hrs">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" placeholder="Mins" id="app_mins">
+                                            </div>    
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" placeholder="Sec" id="app_sec">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <label>address</label>
+                                    <div class="form-group">
+                                        <textarea placeholder="Address" class="form-control" id="app_address"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <label>Reason for appointment</label>
+                                    <div class="form-group">
+                                        <textarea placeholder="Message" class="form-control" id="app_message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center as_padderTop20">
+                                    <a href="javascript:;" class="as_btn" id="as_btn_appointment">make an appointment</a>
+                                </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="as_whychoose_wrapper as_padderTop80 as_padderBottom50">
+            <div class="container">
+                <div class="row as_verticle_center">
+                    <div class="col-lg-3 col-md-12">
+                        <h1 class="as_heading">Why Choose Us</h1>
+                        <p class="as_font14 as_margin0">Consectetur adipiscing elit, sed do eiusmod tempor incididuesdeentiut.</p>
+                    </div>
+                    <div class="col-lg-9 col-md-12">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                <div class="as_whychoose_box text-center">
+                                    <span class="as_number"><span><span data-from="0" data-to="512"
+                                        data-speed="5000">512</span>+</span><img src="assets/images/svg/shape.svg" alt=""></span>
+                                    <h4>Qualified Astrologers</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                <div class="as_whychoose_box text-center">
+                                    <span class="as_number"><span><span data-from="0" data-to="62"
+                                        data-speed="5000">62</span>+</span><img src="assets/images/svg/shape.svg" alt=""></span>
+                                    <h4>Success Horoscope</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                <div class="as_whychoose_box text-center">
+                                    <span class="as_number"><span><span data-from="0" data-to="94"
+                                        data-speed="5000">94</span>+</span><img src="assets/images/svg/shape.svg" alt=""></span>
+                                    <h4>Offices Worldwide</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                <div class="as_whychoose_box text-center">
+                                    <span class="as_number"><span><span data-from="0" data-to="452"
+                                        data-speed="5000">452+</span>+</span><img src="assets/images/svg/shape.svg" alt=""></span>
+                                    <h4>Trust by million clients</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                <div class="as_whychoose_box text-center">
+                                    <span class="as_number"><span><span data-from="0" data-to="12"
+                                        data-speed="5000">12</span>+</span><img src="assets/images/svg/shape.svg" alt=""></span>
+                                    <h4>Year experience</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                <div class="as_whychoose_box text-center">
+                                    <span class="as_number"><span><span data-from="0" data-to="652"
+                                        data-speed="5000">652+</span>+</span><img src="assets/images/svg/shape.svg" alt=""></span>
+                                    <h4>Type of horoscopes</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+          
+        <section class="as_footer_wrapper as_padderTop80">
+            <div class="container">
+                    
+
+                    <div class="as_footer_inner as_padderTop50 as_padderBottom80">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="as_footer_widget">
+                                <div class="as_footer_logo">
+                                    <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+                                </div>
+                                <p>Consectetur adipiscing elited doesde eiusmod tempor incididunt ust labore et dolore magna aliqua.</p>
+
+                                <div class="as_share_box">
+                                    <p>Follow Us</p>
+                                    <ul>
+                                        <li><a href="javascript:;"><img src="assets/images/svg/facebook.svg" alt=""></a></li>
+                                        <li><a href="javascript:;"><img src="assets/images/svg/twitter.svg" alt=""></a></li>
+                                        <li><a href="javascript:;"><img src="assets/images/svg/google.svg" alt=""></a></li>
+                                        <li><a href="javascript:;"><img src="assets/images/svg/youtube.svg" alt=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="as_footer_widget">
+                               <h3 class="as_footer_heading">Our Services</h3>
+
+                               <ul>
+                                   <li><a href="service_detail.html"><span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="8" height="12" viewBox="0 0 8 12"> <path d="M8.000,5.998 L-0.002,11.997 L1.292,5.998 L-0.002,-0.001 L8.000,5.998 ZM1.265,9.924 L6.502,5.998 L1.265,2.071 L2.112,5.998 L1.265,9.924 ZM5.451,5.998 L2.496,8.213 L2.974,5.998 L2.496,3.783 L5.451,5.998 Z" class="cls-1"/> </svg></span> Horoscopes</a></li>
+                                   <li><a href="service_detail.html">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="8" height="12" viewBox="0 0 8 12"> <path d="M8.000,5.998 L-0.002,11.997 L1.292,5.998 L-0.002,-0.001 L8.000,5.998 ZM1.265,9.924 L6.502,5.998 L1.265,2.071 L2.112,5.998 L1.265,9.924 ZM5.451,5.998 L2.496,8.213 L2.974,5.998 L2.496,3.783 L5.451,5.998 Z" class="cls-1"/> </svg></span> Gemstones</a></li>
+                                   <li><a href="service_detail.html"><span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="8" height="12" viewBox="0 0 8 12"> <path d="M8.000,5.998 L-0.002,11.997 L1.292,5.998 L-0.002,-0.001 L8.000,5.998 ZM1.265,9.924 L6.502,5.998 L1.265,2.071 L2.112,5.998 L1.265,9.924 ZM5.451,5.998 L2.496,8.213 L2.974,5.998 L2.496,3.783 L5.451,5.998 Z" class="cls-1"/> </svg></span> Numerology</a></li>
+                                   <li><a href="service_detail.html"><span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="8" height="12" viewBox="0 0 8 12"> <path d="M8.000,5.998 L-0.002,11.997 L1.292,5.998 L-0.002,-0.001 L8.000,5.998 ZM1.265,9.924 L6.502,5.998 L1.265,2.071 L2.112,5.998 L1.265,9.924 ZM5.451,5.998 L2.496,8.213 L2.974,5.998 L2.496,3.783 L5.451,5.998 Z" class="cls-1"/> </svg></span> Tarot Cards</a></li>
+                                   <li><a href="service_detail.html"><span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="8" height="12" viewBox="0 0 8 12"> <path d="M8.000,5.998 L-0.002,11.997 L1.292,5.998 L-0.002,-0.001 L8.000,5.998 ZM1.265,9.924 L6.502,5.998 L1.265,2.071 L2.112,5.998 L1.265,9.924 ZM5.451,5.998 L2.496,8.213 L2.974,5.998 L2.496,3.783 L5.451,5.998 Z" class="cls-1"/> </svg></span> Birth Journal</a></li>
+                               </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="as_footer_widget">
+                               <h3 class="as_footer_heading">Quick Links</h3>
+
+                               <ul>
+                                   <li><a href="index.html"><span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="8" height="12" viewBox="0 0 8 12"> <path d="M8.000,5.998 L-0.002,11.997 L1.292,5.998 L-0.002,-0.001 L8.000,5.998 ZM1.265,9.924 L6.502,5.998 L1.265,2.071 L2.112,5.998 L1.265,9.924 ZM5.451,5.998 L2.496,8.213 L2.974,5.998 L2.496,3.783 L5.451,5.998 Z" class="cls-1"/> </svg></span> Home</a></li>
+                                   <li><a href="about.html"><span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="8" height="12" viewBox="0 0 8 12"> <path d="M8.000,5.998 L-0.002,11.997 L1.292,5.998 L-0.002,-0.001 L8.000,5.998 ZM1.265,9.924 L6.502,5.998 L1.265,2.071 L2.112,5.998 L1.265,9.924 ZM5.451,5.998 L2.496,8.213 L2.974,5.998 L2.496,3.783 L5.451,5.998 Z" class="cls-1"/> </svg></span> About Us</a></li>
+                                   <li><a href="service.html"><span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="8" height="12" viewBox="0 0 8 12"> <path d="M8.000,5.998 L-0.002,11.997 L1.292,5.998 L-0.002,-0.001 L8.000,5.998 ZM1.265,9.924 L6.502,5.998 L1.265,2.071 L2.112,5.998 L1.265,9.924 ZM5.451,5.998 L2.496,8.213 L2.974,5.998 L2.496,3.783 L5.451,5.998 Z" class="cls-1"/> </svg></span> Services</a></li>
+                                   <li><a href="appointment.html"><span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="8" height="12" viewBox="0 0 8 12"> <path d="M8.000,5.998 L-0.002,11.997 L1.292,5.998 L-0.002,-0.001 L8.000,5.998 ZM1.265,9.924 L6.502,5.998 L1.265,2.071 L2.112,5.998 L1.265,9.924 ZM5.451,5.998 L2.496,8.213 L2.974,5.998 L2.496,3.783 L5.451,5.998 Z" class="cls-1"/> </svg></span> Appointment</a></li>
+                                   <li><a href="products.html"><span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="8" height="12" viewBox="0 0 8 12"> <path d="M8.000,5.998 L-0.002,11.997 L1.292,5.998 L-0.002,-0.001 L8.000,5.998 ZM1.265,9.924 L6.502,5.998 L1.265,2.071 L2.112,5.998 L1.265,9.924 ZM5.451,5.998 L2.496,8.213 L2.974,5.998 L2.496,3.783 L5.451,5.998 Z" class="cls-1"/> </svg></span> Products</a></li>
+                                   <li><a href="contact.html"><span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="8" height="12" viewBox="0 0 8 12"> <path d="M8.000,5.998 L-0.002,11.997 L1.292,5.998 L-0.002,-0.001 L8.000,5.998 ZM1.265,9.924 L6.502,5.998 L1.265,2.071 L2.112,5.998 L1.265,9.924 ZM5.451,5.998 L2.496,8.213 L2.974,5.998 L2.496,3.783 L5.451,5.998 Z" class="cls-1"/> </svg></span> Contact Us</a></li>
+                               </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="as_footer_widget">
+                               <h3 class="as_footer_heading">Contact Us</h3>
+
+                               <ul class="as_contact_list">
+                                   <li>
+                                       <img src="assets/images/svg/map.svg" alt="">
+                                        <p>Online Consultation, Mumbai, Maharashtra, India</p>
+                                    </li>
+                                   <li>
+                                       <img src="assets/images/svg/address.svg" alt="">
+                                        <p>
+                                            <a href="javascript:;">astrology8082937245@gmail.com</a>
+                                            <a href="javascript:;">astrology8082937245@gmail.com</a>
+                                        </p> 
+                                    </li> 
+                                   <li>
+                                       <img src="assets/images/svg/call.svg" alt="">
+                                        <p>
+                                            <a href="javascript:;">+91 8082937245</a><br>
+                                            <a href="javascript:;">+91 8082937245</a>
+                                        </p>
+                                    </li>
+                               </ul>
+                            </div>
+                        </div>
+                        </div>
+                        
+                    </div>
+            </div>
+        </section>
+        <section class="as_copyright_wrapper text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Copyright &copy; 2021 Astrology. All Right Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </section> 
+    </div>
+    
+
+
+    <!-- javascript -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugin/slick/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugin/countto/jquery.countTo.js"></script>
+    <script type="text/javascript" src="assets/js/plugin/airdatepicker/datepicker.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugin/airdatepicker/i18n/datepicker.en.js"></script>
+    <script type="text/javascript" src="assets/js/plugin/select2/select2.min.js"></script>
+    <script src="assets/js/custom.js"></script>  
+    <script>
+        $(document).ready(function() {
+            $('#as_btn_appointment').on('click', function(e) {
+                e.preventDefault();
+                
+                // Get form inputs
+                var name = $('#app_name').val().trim();
+                var email = $('#app_email').val().trim();
+                var mobile = $('#app_mobile').val().trim();
+                var gender = $('#app_gender').val();
+                var timeofday = $('#app_timeofday').val();
+                var reach = $('#app_reach').val();
+                var date = $('#app_date').val().trim();
+                var month = $('#app_month').val().trim();
+                var year = $('#app_year').val().trim();
+                var hrs = $('#app_hrs').val().trim();
+                var mins = $('#app_mins').val().trim();
+                var sec = $('#app_sec').val().trim();
+                var address = $('#app_address').val().trim();
+                var message = $('#app_message').val().trim();
+                
+                // Simple validation
+                if (!name || !mobile) {
+                    alert('Please enter your Name and Mobile Number.');
+                    return;
+                }
+                
+                // Format preferred date and time
+                var preferredDate = (date || '') + '-' + (month || '') + '-' + (year || '');
+                var preferredTime = (hrs || '00') + ':' + (mins || '00') + ':' + (sec || '00');
+                
+                // Construct text message
+                var textMessage = "Pranaam, I would like to book an appointment with the following details:\n\n" +
+                                  "✨ Name: " + name + "\n" +
+                                  "📧 Email: " + (email || "Not provided") + "\n" +
+                                  "📱 Mobile: " + mobile + "\n" +
+                                  "👤 Gender: " + gender + "\n" +
+                                  "🌅 Preferred Period: " + timeofday + "\n" +
+                                  "📞 Reach via: " + reach + "\n" +
+                                  "📅 Preferred Date: " + preferredDate + "\n" +
+                                  "🕒 Preferred Time: " + preferredTime + "\n" +
+                                  "📍 Address: " + (address || "Not provided") + "\n" +
+                                  "💬 Reason/Message: " + (message || "None");
+                
+                // URL encode the message
+                var encodedMessage = encodeURIComponent(textMessage);
+                
+                // WhatsApp URL (Targeting client's phone number 8082937245)
+                var whatsappUrl = "https://wa.me/918082937245?text=" + encodedMessage;
+                
+                // Redirect user to WhatsApp in a new tab
+                window.open(whatsappUrl, '_blank');
+            });
+        });
+    </script>
+</body>
+</html>
