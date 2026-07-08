@@ -128,12 +128,35 @@ $(document).ready(function(){
       }).circularProgress('animate', 76, 5000);
    }
 
- 
-
-  
-
-  
-  
+    // Testimonials slider
+    if ($('.as_reviews_slider').length) {
+        $('.as_reviews_slider').slick({
+            infinite: true,
+            speed: 800,
+            dots: true,
+            arrows: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            responsive: [
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    }
 })
 $(window).on('load',function(){
     $('.as_loader').addClass('hide')
