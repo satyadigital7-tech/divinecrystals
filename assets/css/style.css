@@ -2949,9 +2949,7 @@ textarea.form-control {
         left: -102px;
     }
     .as_info_detail {
-        justify-content: center;
-        flex-direction: column;
-        padding: 10px;
+        display: none !important;
     }
     .as_right_info {
         padding-left: 5px;
