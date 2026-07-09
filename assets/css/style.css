@@ -3723,64 +3723,106 @@ textarea.form-control {
 }
 
 /* ============================================================
-   PREMIUM MOBILE HAMBURGER REDESIGN
+   PREMIUM MOBILE HAMBURGER REDESIGN (GOLDEN LUXURY TOGGLE)
    ============================================================ */
 
-/* Hide the default SVG menu icon — we use CSS bars instead */
+/* Hide the default SVG menu icon if present */
 .as_toggle img {
-    display: none;
+    display: none !important;
 }
 
 /* The toggle button itself */
 .as_toggle {
-    width: 44px;
-    height: 44px;
-    border-radius: 10px;
-    background: linear-gradient(135deg, var(--secondary-color), #c49a1a);
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    cursor: pointer;
-    box-shadow: 0 4px 15px rgba(197, 155, 22, 0.4);
-    transition: all 0.3s ease;
-    flex-shrink: 0;
-    position: relative;
-    z-index: 1001;
+    position: fixed !important;
+    top: 20px !important;
+    right: 20px !important;
+    width: 48px !important;
+    height: 48px !important;
+    border-radius: 50% !important;
+    background-color: #0B0616 !important;
+    border: 2px solid #D4AF37 !important;
+    display: none !important; /* hidden on desktop, shown on mobile */
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 5px !important;
+    cursor: pointer !important;
+    z-index: 10000 !important;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2) !important;
+    transition: all 0.3s ease-in-out !important;
+    padding: 0 !important;
 }
 
-/* The 3 animated bars */
-.as_toggle::before,
-.as_toggle::after,
-.as_toggle .as_toggle_bar {
-    content: '';
-    display: block;
-    width: 22px;
-    height: 2.5px;
-    background-color: #fff;
-    border-radius: 3px;
-    transition: transform 0.35s ease, opacity 0.3s ease;
-    transform-origin: center;
+/* Hover and Active State */
+.as_toggle:hover {
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.6) !important;
+    transform: scale(1.05) !important;
 }
-/* Middle bar — created via a real element; fallback using gap */
-.as_toggle::before { content: ''; }
-.as_toggle::after  { content: ''; }
 
-/* Animated X when menu is open */
+.as_toggle:active {
+    transform: scale(0.95) !important;
+}
+
+/* Toggle Lines */
+.as_toggle_line {
+    display: block !important;
+    height: 2px !important;
+    background-color: #D4AF37 !important;
+    border-radius: 2px !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+/* Closed state - custom widths and alignments for the premium look */
+/* Top line */
+.as_toggle_line.line_top {
+    width: 22px !important;
+    transform: none !important;
+}
+
+/* Middle line - slightly shifted right as per PRD */
+.as_toggle_line.line_mid {
+    width: 16px !important;
+    transform: translateX(3px) !important;
+    opacity: 1 !important;
+}
+
+/* Bottom line */
+.as_toggle_line.line_bot {
+    width: 22px !important;
+    transform: none !important;
+}
+
+/* Open State (Menu Open) */
 .menu_open .as_toggle {
-    background: linear-gradient(135deg, #8b3a3a, #c0392b);
-    box-shadow: 0 4px 15px rgba(192, 57, 43, 0.4);
+    border-color: #D4AF37 !important;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4) !important;
 }
-.menu_open .as_toggle::before {
-    transform: translateY(8.5px) rotate(45deg);
+
+/* Animation to 'X' */
+.menu_open .as_toggle_line.line_top {
+    transform: translateY(7px) rotate(45deg) !important;
+    width: 22px !important;
 }
-.menu_open .as_toggle::after {
-    transform: translateY(-8.5px) rotate(-45deg);
+
+.menu_open .as_toggle_line.line_mid {
+    opacity: 0 !important;
+    width: 0 !important;
 }
+
+.menu_open .as_toggle_line.line_bot {
+    transform: translateY(-7px) rotate(-45deg) !important;
+    width: 22px !important;
+}
+
 
 /* Mobile slide-in nav panel — FULL REDESIGN */
 @media (max-width: 767px) {
+    /* Elevate menu wrapper above the body overlay to prevent blur/hiding */
+    .as_menu_wrapper {
+        position: relative !important;
+        z-index: 9999 !important;
+    }
+
     /* Show the premium toggle button */
     .as_toggle {
         display: flex !important;
