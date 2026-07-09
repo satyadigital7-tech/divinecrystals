@@ -2866,10 +2866,6 @@ textarea.form-control {
     }
 }
 @media (max-width:767px){
-    html, body {
-        width: 100% !important;
-        overflow-x: hidden !important;
-    }
     .as_info_box {
         margin: 10px 0;
     }
@@ -3924,21 +3920,10 @@ textarea.form-control {
 
     /* Logo area */
     .as_logo {
-        width: 100% !important;
-        border-right: none !important;
-        padding: 12px 15px !important;
-    }
-    .as_logo a {
-        display: flex !important;
-        align-items: center !important;
+        padding: 10px 15px !important;
     }
     .as_logo span {
-        white-space: nowrap !important;
-        font-size: 17px !important;
-        letter-spacing: 0.2px !important;
-    }
-    .as_header_detail {
-        width: 0 !important;
+        font-size: 16px !important;
     }
 
     /* ============================================================
