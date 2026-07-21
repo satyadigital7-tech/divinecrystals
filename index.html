@@ -586,41 +586,56 @@
 
                             <!-- Panel 3: Intention -->
                             <div id="panel_intention" class="as_wizard_content_panel">
-                                <div class="as_wizard_grid" style="grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));">
-                                    <div class="as_wizard_item" onclick="selectWizardItem('intention', 'Wealth')">
-                                        <div style="font-size: 22px; margin-bottom: 5px;">💰</div>
-                                        <h5>Wealth & Prosperity</h5>
-                                        <p>Abundance & success</p>
-                                    </div>
-                                    <div class="as_wizard_item" onclick="selectWizardItem('intention', 'Protection')">
-                                        <div style="font-size: 22px; margin-bottom: 5px;">🛡️</div>
-                                        <h5>Protection & Shielding</h5>
-                                        <p>Ward off negativity</p>
-                                    </div>
-                                    <div class="as_wizard_item" onclick="selectWizardItem('intention', 'Love')">
-                                        <div style="font-size: 22px; margin-bottom: 5px;">💖</div>
-                                        <h5>Love & Friendship</h5>
-                                        <p>Emotional healing</p>
-                                    </div>
-                                    <div class="as_wizard_item" onclick="selectWizardItem('intention', 'Focus')">
-                                        <div style="font-size: 22px; margin-bottom: 5px;">👁️</div>
-                                        <h5>Focus & Intuition</h5>
-                                        <p>Concentration & power</p>
+                                <div class="as_wizard_grid" style="grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));">
+                                    <div class="as_wizard_item" onclick="selectWizardItem('intention', 'Healing')">
+                                        <div style="font-size: 22px; margin-bottom: 5px;">🌀</div>
+                                        <h5>Healing &amp; Aura Cleansing</h5>
+                                        <p>Energy alignment</p>
                                     </div>
                                     <div class="as_wizard_item" onclick="selectWizardItem('intention', 'Creativity')">
                                         <div style="font-size: 22px; margin-bottom: 5px;">🎨</div>
-                                        <h5>Creativity & Flow</h5>
-                                        <p>Sacral chakra healing</p>
+                                        <h5>Creativity</h5>
+                                        <p>Sacral chakra flow</p>
                                     </div>
-                                    <div class="as_wizard_item" onclick="selectWizardItem('intention', 'Willpower')">
-                                        <div style="font-size: 22px; margin-bottom: 5px;">⚡</div>
-                                        <h5>Willpower & Drive</h5>
-                                        <p>Self-confidence & courage</p>
+                                    <div class="as_wizard_item" onclick="selectWizardItem('intention', 'Protection')">
+                                        <div style="font-size: 22px; margin-bottom: 5px;">🛡️</div>
+                                        <h5>Protection</h5>
+                                        <p>Ward off negativity</p>
                                     </div>
-                                    <div class="as_wizard_item" onclick="selectWizardItem('intention', 'Clarity')">
+                                    <div class="as_wizard_item" onclick="selectWizardItem('intention', 'Prosperity')">
+                                        <div style="font-size: 22px; margin-bottom: 5px;">💰</div>
+                                        <h5>Prosperity &amp; Success</h5>
+                                        <p>Abundance &amp; growth</p>
+                                    </div>
+                                    <div class="as_wizard_item" onclick="selectWizardItem('intention', 'Love')">
+                                        <div style="font-size: 22px; margin-bottom: 5px;">💖</div>
+                                        <h5>Love &amp; Relationships</h5>
+                                        <p>Emotional healing</p>
+                                    </div>
+                                    <div class="as_wizard_item" onclick="selectWizardItem('intention', 'Intuition')">
+                                        <div style="font-size: 22px; margin-bottom: 5px;">👁️</div>
+                                        <h5>Intuition &amp; Focus</h5>
+                                        <p>Concentration &amp; clarity</p>
+                                    </div>
+                                    <div class="as_wizard_item" onclick="selectWizardItem('intention', 'Wealth')">
                                         <div style="font-size: 22px; margin-bottom: 5px;">✨</div>
-                                        <h5>Clarity & Cleansing</h5>
-                                        <p>Aura alignment</p>
+                                        <h5>Wealth &amp; Abundance</h5>
+                                        <p>Manifestation power</p>
+                                    </div>
+                                    <div class="as_wizard_item" onclick="selectWizardItem('intention', 'Confidence')">
+                                        <div style="font-size: 22px; margin-bottom: 5px;">⚡</div>
+                                        <h5>Confidence &amp; Willpower</h5>
+                                        <p>Self-power &amp; courage</p>
+                                    </div>
+                                    <div class="as_wizard_item" onclick="selectWizardItem('intention', 'Opportunities')">
+                                        <div style="font-size: 22px; margin-bottom: 5px;">🌱</div>
+                                        <h5>Opportunities &amp; Growth</h5>
+                                        <p>Luck &amp; new beginnings</p>
+                                    </div>
+                                    <div class="as_wizard_item" onclick="selectWizardItem('intention', 'EnergyProtection')">
+                                        <div style="font-size: 22px; margin-bottom: 5px;">🔮</div>
+                                        <h5>Energy Protection</h5>
+                                        <p>Aura shielding</p>
                                     </div>
                                 </div>
                             </div>
@@ -938,158 +953,195 @@
     <script>
         // Divine Crystals 146 - Interactive Match Wizard JavaScript
         const crystalDb = {
-            "chakra": {
-                name: "7 Chakra Bracelet (8mm)",
-                desc: "Healing and aura cleansing crystal bracelet.",
-                price: "₹599/-",
-                img: "assets/images/products/7 chakra bracelet.jpeg"
-            },
             "carnelian": {
-                name: "Carnelian",
-                desc: "For Sacral Chakra healing, courage and creativity.",
+                name: "Red Carnelian",
+                desc: "A fiery crystal known for boosting energy, vital force, passion, and personal power.",
+                benefits: "Boosts motivation, courage, vitality, and sacral chakra alignment. Helps overcome hesitation and unlocks creative potential.",
+                suitableFor: "Individuals seeking courage, motivation, creative passion, and active energy drive.",
                 price: "₹840/-",
                 img: "assets/images/products/Red carnelian.jpeg"
             },
-            "citrine": {
-                name: "Citrine",
-                desc: "The merchant stone of abundance, prosperity, and success.",
-                price: "₹860/-",
-                img: "assets/images/products/Yellow citrine.jpeg"
-            },
             "rosequartz": {
                 name: "Rose Quartz",
-                desc: "The crystal of unconditional love, friendship, and emotional healing.",
-                price: "₹799/-",
-                img: "assets/images/products/Rose quartz.png"
-            },
-            "amethyst": {
-                name: "Amethyst",
-                desc: "For intuition, memory power, stress relief, and deep concentration.",
-                price: "₹999/-",
-                img: "assets/images/products/Amethyst.jpeg"
-            },
-            "pyrite": {
-                name: "Pyrite",
-                desc: "For wealth attraction, confidence, shielding, and prosperity.",
-                price: "₹850/-",
-                img: "assets/images/products/Pyrite.jpeg"
-            },
-            "tigereye": {
-                name: "Tiger Eye",
-                desc: "For willpower, protection, mental clarity, and courage.",
-                price: "₹888/-",
-                img: "assets/images/products/Tiger eye.jpeg"
+                desc: "The stone of universal love and emotional harmony, opening the heart chakra.",
+                benefits: "Restores trust, attracts romantic & self-love, deepens relationships, and calms emotional wounds.",
+                suitableFor: "Anyone seeking love, emotional balance, relationship harmony, and inner peace.",
+                price: "₹680/-",
+                img: "assets/images/New folder/Rose_Quartz_Crystal_Bracelet.jpeg"
             },
             "greenaventurine": {
                 name: "Green Aventurine",
-                desc: "The stone of opportunity, luck, and wealth manifestation.",
+                desc: "The premier stone of luck, opportunity, personal growth, and heart prosperity.",
+                benefits: "Attracts new opportunities, financial luck, emotional recovery, and positive life expansion.",
+                suitableFor: "Entrepreneurs, job seekers, and individuals embarking on new ventures or growth journeys.",
                 price: "₹780/-",
                 img: "assets/images/products/Green aventurine.jpeg"
             },
-            "sulemani": {
-                name: "Sulemani Hakik",
-                desc: "For protection against negative energy and warding off evil eye.",
-                price: "₹890/-",
-                img: "assets/images/products/Sulemani hakik.jpeg"
+            "clearquartz": {
+                name: "Clear Quartz",
+                desc: "The master healer crystal that amplifies energy, thought, and spiritual clarity.",
+                benefits: "Clears negative energies, enhances concentration, amplifies intentions, and balances all chakras.",
+                suitableFor: "Students, healers, meditators, and anyone seeking clarity and energy amplification.",
+                price: "₹1,050/-",
+                img: "assets/images/New folder/Clear_Quartz_Crystal_Bracelet.jpeg"
             },
-            "selenite": {
-                name: "Selenite Plate",
-                desc: "Used for crystal cleansing, recharging other stones, and calming.",
-                price: "₹740/-",
-                img: "assets/images/products/Salinite.jpeg"
+            "sunstone": {
+                name: "Sunstone",
+                desc: "A joyful, light-inspiring stone that instills good fortune, leadership, and independence.",
+                benefits: "Encourages optimism, leadership qualities, warmth, self-empowerment, and vitality.",
+                suitableFor: "Leaders, creators, and individuals looking to shine with confidence and enthusiasm.",
+                price: "₹830/-",
+                img: "assets/images/products/Yellow citrine.jpeg"
             },
-            "shriyantra_pyrite": {
-                name: "Shri Yantra Pyrite Frame",
-                desc: "Sacred Shri Yantra engraved on powerful pyrite for wealth, focus, and positive energy.",
-                price: "₹899/-",
-                img: "assets/images/products/Shri Yantra pyrite frame.jpeg"
+            "greenjade": {
+                name: "Green Jade & Pyrite Zibu Coin",
+                desc: "A legendary symbol of serenity, wealth protection, purity, and sacred Zibu symbol manifestation.",
+                benefits: "Soothes the mind, releases negative thoughts, attracts good luck, and balances emotions.",
+                suitableFor: "Those seeking harmony, wisdom, peace, and stable abundance.",
+                price: "₹700/-",
+                img: "assets/images/New folder/Angel_Number_Manifestation_Crystal_Green.jpeg"
             },
-            "sevenhorse_pyrite": {
-                name: "Seven Horse Pyrite Frame",
-                desc: "Vastu-aligned seven running horses on pyrite for career growth, success, and prosperity.",
-                price: "₹899/-",
-                img: "assets/images/products/Seven horse pyrite frame.jpeg"
+            "turquoise": {
+                name: "Turquoise (Irani Firoza)",
+                desc: "An ancient sacred stone offering spiritual protection, clear expression, and luck.",
+                benefits: "Protects against evil eye, enhances communication, balances throat chakra, and brings calm.",
+                suitableFor: "Speakers, travelers, public figures, and people seeking protective communication.",
+                price: "₹990/-",
+                img: "assets/images/products/Irani firoza.jpeg"
             },
-            "selenite_plate_carved": {
-                name: "Selenite Crystal Plate",
-                desc: "Beautifully carved Selenite plate for cleansing, charging crystals, and raising vibrations.",
+            "redjasper": {
+                name: "Red Jasper",
+                desc: "A supreme nurturer crystal providing strong grounding energy, stability, and stamina.",
+                benefits: "Grounds excess energy, builds stamina, wards off negative vibes, and strengthens resolve.",
+                suitableFor: "People needing physical energy, emotional grounding, resilience, and endurance.",
                 price: "₹799/-",
-                img: "assets/images/products/Salinite crystal plate.jpeg"
+                img: "assets/images/New folder/Red_Jasper_Crystal_Bracelet.jpeg"
             },
-            "mini_pyrite_tree": {
-                name: "Mini Pyrite Crystal Tree",
-                desc: "Mini pyrite tree designed to attract money, opportunities, and career growth.",
-                price: "₹699/-",
-                img: "assets/images/products/Mini pyrite crystal tree for money attraction and growth.jpeg"
+            "lapislazuli": {
+                name: "Lapis Lazuli",
+                desc: "The stone of wisdom, truth, third-eye intuition, and royal enlightenment.",
+                benefits: "Activates third-eye chakra, sharpens intuition, enhances truthfulness, and relieves stress.",
+                suitableFor: "Seekers, intellectuals, decision-makers, and spiritual practitioners.",
+                price: "₹888/-",
+                img: "assets/images/New folder/Lapis_Lazuli_Crystal_Bracelet.jpeg"
             },
-            "seven_chakra_tree": {
-                name: "Seven Chakra Crystal Tree",
-                desc: "Beautiful tree with 7 chakra gemstones for balancing energy, healing, and harmony.",
-                price: "₹1,299/-",
-                img: "assets/images/products/Seven chakra crystal tree.jpeg"
+            "pyrite": {
+                name: "Pyrite",
+                desc: "The ultimate money magnet crystal for wealth attraction, shielding, and manifestation.",
+                benefits: "Attracts financial growth, wealth opportunities, protects against energy leaks, and builds confidence.",
+                suitableFor: "Business owners, career professionals, and anyone manifesting financial abundance.",
+                price: "₹850/-",
+                img: "assets/images/products/Pyrite.jpeg"
             },
-            "pyrite_tree_large": {
-                name: "Pyrite Crystal Tree",
-                desc: "Large pyrite crystal tree to manifest wealth, abundance, prosperity, and success.",
-                price: "₹1,499/-",
-                img: "assets/images/products/Pyrite crystal tree for money attraction and abundance.jpeg"
+            "amethyst": {
+                name: "Amethyst",
+                desc: "A serene spiritual crystal promoting deep intuition, peace, and mental focus.",
+                benefits: "Relieves stress, enhances sleep, protects against psychic attacks, and sharpens mental focus.",
+                suitableFor: "Students, professionals suffering stress, meditators, and intuitive minds.",
+                price: "₹999/-",
+                img: "assets/images/New folder/Amethyst_Angel_Number_Crystal.jpeg"
             },
-            "selenite_black_tourmaline": {
-                name: "Selenite and Black Tourmaline",
-                desc: "Powerful protection combination to clear negative energy and shield your home.",
+            "citrine": {
+                name: "Citrine",
+                desc: "The 'Merchant's Stone' of brightness, success, solar energy, and commercial growth.",
+                benefits: "Manifests wealth, boosts joy, stimulates creativity, and converts negative energy into positive.",
+                suitableFor: "Traders, merchants, artists, and anyone wanting to attract prosperity.",
+                price: "₹860/-",
+                img: "assets/images/products/Yellow citrine.jpeg"
+            },
+            "moonstone": {
+                name: "Moonstone",
+                desc: "A gentle, intuitive crystal connected to lunar energy, emotional balance, and new beginnings.",
+                benefits: "Enhances intuition, stabilizes emotions, balances feminine energy, and supports new life cycles.",
+                suitableFor: "People going through transitions, seeking emotional balance or spiritual guidance.",
+                price: "₹730/-",
+                img: "assets/images/New folder/White_Moonstone_Crystal_Bracelet.jpeg"
+            },
+            "tigereye": {
+                name: "Tiger Eye",
+                desc: "A powerful stone of courage, willpower, focus, and grounding defense.",
+                benefits: "Sharpens focus, eliminates fear & anxiety, boosts confidence, and wards off evil intentions.",
+                suitableFor: "Goal-oriented individuals, students facing exams, and career leaders.",
+                price: "₹888/-",
+                img: "assets/images/products/Tiger eye.jpeg"
+            },
+            "chakra": {
+                name: "7 Chakra Bracelet",
+                desc: "A harmonizing alignment bracelet designed to balance all 7 major energy centers.",
+                benefits: "Cleanses aura, aligns chakras, enhances overall vitality, and restores energetic balance.",
+                suitableFor: "Anyone undergoing energy healing, yoga practice, or seeking holistic alignment.",
+                price: "₹599/-",
+                img: "assets/images/products/7 chakra bracelet.jpeg"
+            },
+            "blacktourmaline": {
+                name: "Black Tourmaline",
+                desc: "The strongest protective shield crystal against environmental and energetic negativity.",
+                benefits: "Absorbs electromagnetic smog & negative vibes, grounds aura, and provides psychological safety.",
+                suitableFor: "People working in stressful environments, using electronics heavily, or needing shielding.",
                 price: "₹730/-",
                 img: "assets/images/products/Selenite and Black tourmalin.jpeg"
+            },
+            "sulemani": {
+                name: "Sulemani Hakik",
+                desc: "An ancient protective stone against evil eye (Nazar), black magic, and sudden setbacks.",
+                benefits: "Provides intense aura protection, balances root chakra, and grounds erratic thoughts.",
+                suitableFor: "Individuals facing obstacles, bad luck, or seeking spiritual shielding.",
+                price: "₹890/-",
+                img: "assets/images/products/Sulemani hakik.jpeg"
             }
         };
 
         const matches = {
             zodiac: {
-                "Aries": { desc: "Aries thrives with stones of action, energy, and manifest force.", crystals: ["carnelian", "pyrite", "shriyantra_pyrite"] },
-                "Taurus": { desc: "Taurus connects deeply with grounding, abundant, and heart-opening stones.", crystals: ["greenaventurine", "rosequartz"] },
-                "Gemini": { desc: "Gemini resonates with stones of mental clarity, communication, and intellectual focus.", crystals: ["citrine", "tigereye"] },
-                "Cancer": { desc: "Cancer is guided by stones that soothe the emotions and purify energy.", crystals: ["rosequartz", "selenite", "selenite_plate_carved"] },
-                "Leo": { desc: "Leo aligns with solar energy, wealth, and vibrant self-confidence.", crystals: ["pyrite", "tigereye", "pyrite_tree_large"] },
-                "Virgo": { desc: "Virgo thrives with crystals that enhance analytical focus and calm stress.", crystals: ["amethyst", "citrine", "greenaventurine"] },
-                "Libra": { desc: "Libra seeks stones that promote peace, balance, and loving relationships.", crystals: ["rosequartz", "greenaventurine"] },
-                "Scorpio": { desc: "Scorpio aligns with deep protection, healing, and transformation.", crystals: ["carnelian", "sulemani", "selenite_black_tourmaline"] },
-                "Sagittarius": { desc: "Sagittarius is guided by stones of spiritual intuition, success, and high vibes.", crystals: ["amethyst", "citrine", "tigereye"] },
-                "Capricorn": { desc: "Capricorn benefits from powerful grounding, shielding, and career stability.", crystals: ["sulemani", "sulemani", "selenite_black_tourmaline"] },
-                "Aquarius": { desc: "Aquarius aligns with stones that aid cosmic intuition and aura shielding.", crystals: ["amethyst", "sulemani", "selenite_plate_carved"] },
-                "Pisces": { desc: "Pisces connects with crystals of emotional healing, dreaming, and high intuition.", crystals: ["amethyst", "rosequartz", "selenite"] }
+                "Aries": { desc: "Aries (Mar 21 - Apr 19) is ruled by Mars and thrives with high-vitality, courageous energy.", crystalKey: "carnelian" },
+                "Taurus": { desc: "Taurus (Apr 20 - May 20) is ruled by Venus and connects deeply with soothing heart abundance.", crystalKey: "rosequartz" },
+                "Gemini": { desc: "Gemini (May 21 - Jun 20) is ruled by Mercury and benefits from fresh, lucky growth energy.", crystalKey: "greenaventurine" },
+                "Cancer": { desc: "Cancer (Jun 21 - Jul 22) is ruled by the Moon and resonates with pure energy amplification and clarity.", crystalKey: "clearquartz" },
+                "Leo": { desc: "Leo (Jul 23 - Aug 22) is ruled by the Sun and radiates with solar warmth, optimism, and regal leadership.", crystalKey: "sunstone" },
+                "Virgo": { desc: "Virgo (Aug 23 - Sep 22) is ruled by Mercury and aligns with peaceful wisdom, calm focus, and balance.", crystalKey: "greenjade" },
+                "Libra": { desc: "Libra (Sep 23 - Oct 22) is ruled by Venus and thrives with protective, peaceful, and harmonizing energy.", crystalKey: "turquoise" },
+                "Scorpio": { desc: "Scorpio (Oct 23 - Nov 21) is ruled by Pluto/Mars and connects with deep grounding stamina and resilience.", crystalKey: "redjasper" },
+                "Sagittarius": { desc: "Sagittarius (Nov 22 - Dec 21) is ruled by Jupiter and expands through royal wisdom and intuition.", crystalKey: "lapislazuli" },
+                "Capricorn": { desc: "Capricorn (Dec 22 - Jan 19) is ruled by Saturn and attracts solid material wealth and career mastery.", crystalKey: "pyrite" },
+                "Aquarius": { desc: "Aquarius (Jan 20 - Feb 18) is ruled by Uranus and flourishes with serene focus and higher consciousness.", crystalKey: "amethyst" },
+                "Pisces": { desc: "Pisces (Feb 19 - Mar 20) is ruled by Neptune and manifests bright abundance, joy, and spiritual light.", crystalKey: "citrine" }
             },
             number: {
-                "1": { desc: "Number 1 (born on 1, 10, 19, 28) aligns with the Sun's power of leadership and manifestation.", crystals: ["pyrite", "citrine", "shriyantra_pyrite", "sevenhorse_pyrite"] },
-                "2": { desc: "Number 2 (born on 2, 11, 20, 29) aligns with the Moon's nurturing and intuitive energy.", crystals: ["selenite", "rosequartz", "selenite_plate_carved"] },
-                "3": { desc: "Number 3 (born on 3, 12, 21, 30) aligns with Jupiter's expansion, wisdom, and learning.", crystals: ["amethyst", "citrine"] },
-                "4": { desc: "Number 4 (born on 4, 13, 22, 31) aligns with Rahu's drive for stability and protection.", crystals: ["tigereye", "sulemani"] },
-                "5": { desc: "Number 5 (born on 5, 14, 23) aligns with Mercury's intellect, communication, and adaptability.", crystals: ["greenaventurine"] },
-                "6": { desc: "Number 6 (born on 6, 15, 24) aligns with Venus's energy of love, beauty, and creativity.", crystals: ["rosequartz", "carnelian"] },
-                "7": { desc: "Number 7 (born on 7, 16, 25) aligns with Ketu's energy of spiritual insight and intuition.", crystals: ["amethyst", "chakra", "seven_chakra_tree"] },
-                "8": { desc: "Number 8 (born on 8, 17, 26) aligns with Saturn's lessons, focus, and ultimate protection.", crystals: ["sulemani", "sulemani", "selenite_black_tourmaline"] },
-                "9": { desc: "Number 9 (born on 9, 18, 27) aligns with Mars's energy of courage, drive, and heat.", crystals: ["carnelian", "pyrite"] }
+                "1": { desc: "Birth Number 1 (Born on 1, 10, 19, 28) — Ruled by Sun. Represents leadership, ambition, and confidence.", crystalKey: "sunstone" },
+                "2": { desc: "Birth Number 2 (Born on 2, 11, 20, 29) — Ruled by Moon. Represents intuition, harmony, and emotional depth.", crystalKey: "moonstone" },
+                "3": { desc: "Birth Number 3 (Born on 3, 12, 21, 30) — Ruled by Jupiter. Represents expansion, knowledge, and prosperity.", crystalKey: "citrine" },
+                "4": { desc: "Birth Number 4 (Born on 4, 13, 22) — Ruled by Rahu. Represents practical drive, focus, and stability.", crystalKey: "tigereye" },
+                "5": { desc: "Birth Number 5 (Born on 5, 14, 23) — Ruled by Mercury. Represents adaptability, intelligence, and luck.", crystalKey: "greenaventurine" },
+                "6": { desc: "Birth Number 6 (Born on 6, 15, 24) — Ruled by Venus. Represents love, beauty, balance, and protection.", crystalKey: "turquoise" },
+                "7": { desc: "Birth Number 7 (Born on 7, 16, 25) — Ruled by Ketu. Represents deep spiritual wisdom, intuition, and truth.", crystalKey: "lapislazuli" },
+                "8": { desc: "Birth Number 8 (Born on 8, 17, 26) — Ruled by Saturn. Represents discipline, wealth manifestation, and power.", crystalKey: "pyrite" },
+                "9": { desc: "Birth Number 9 (Born on 9, 18, 27) — Ruled by Mars. Represents courage, energy, and physical resilience.", crystalKey: "redjasper" }
             },
             intention: {
-                "Wealth": { desc: "Attract wealth, opportunities, success, and prosperity into your space.", crystals: ["pyrite", "citrine", "greenaventurine", "mini_pyrite_tree", "pyrite_tree_large", "shriyantra_pyrite", "sevenhorse_pyrite"] },
-                "Protection": { desc: "Shield your energy field, ward off evil eyes, and protect against negativity.", crystals: ["sulemani", "sulemani", "tigereye", "selenite_black_tourmaline"] },
-                "Love": { desc: "Invite unconditional love, friendship, harmony, and emotional healing.", crystals: ["rosequartz"] },
-                "Focus": { desc: "Enhance intuition, memory power, concentration, and spiritual alignment.", crystals: ["amethyst", "shriyantra_pyrite"] },
-                "Creativity": { desc: "Stimulate Sacral Chakra healing, passion, creativity, and flow.", crystals: ["carnelian"] },
-                "Willpower": { desc: "Cultivate willpower, protection, self-confidence, and personal power.", crystals: ["tigereye"] },
-                "Clarity": { desc: "Bring overall aura cleansing, energy alignment, and absolute clarity.", crystals: ["chakra", "selenite", "selenite_plate_carved", "seven_chakra_tree"] }
+                "Healing": { desc: "Intention: Healing & Aura Cleansing — Complete balancing of all energy centers.", crystalKey: "chakra" },
+                "Creativity": { desc: "Intention: Creativity — Sparking innovation, passion, and sacral chakra flow.", crystalKey: "carnelian" },
+                "Protection": { desc: "Intention: Protection — Heavy-duty aura shielding against environmental & energy toxicity.", crystalKey: "blacktourmaline" },
+                "Prosperity": { desc: "Intention: Prosperity & Success — Attracting business growth, luck, and commercial success.", crystalKey: "citrine" },
+                "Love": { desc: "Intention: Love & Relationships — Opening the heart chakra to unconditional love and friendship.", crystalKey: "rosequartz" },
+                "Intuition": { desc: "Intention: Intuition & Focus — Calming mental noise and heightening third-eye perception.", crystalKey: "amethyst" },
+                "Wealth": { desc: "Intention: Wealth & Abundance — Powerful financial manifestation and prosperity magnet.", crystalKey: "pyrite" },
+                "Confidence": { desc: "Intention: Confidence & Willpower — Overcoming fear, building courage, and driving personal goals.", crystalKey: "tigereye" },
+                "Opportunities": { desc: "Intention: Opportunities & Growth — Opening doors to new beginnings, career luck, and wealth.", crystalKey: "greenaventurine" },
+                "EnergyProtection": { desc: "Intention: Energy Protection — Warding off Nazar (evil eye), psychic drains, and negative vibes.", crystalKey: "sulemani" }
             },
             month: {
-                "January": { desc: "Stones tuned for grounding, shielding, and fresh beginnings.", crystals: ["sulemani"] },
-                "February": { desc: "Stones tuned for spiritual intuition, calming, and focus.", crystals: ["amethyst"] },
-                "March": { desc: "Stones tuned for courage, passion, and creativity.", crystals: ["carnelian"] },
-                "April": { desc: "Stones tuned for light, cleansing, and amplification.", crystals: ["selenite"] },
-                "May": { desc: "Stones tuned for prosperity, luck, and abundance.", crystals: ["greenaventurine"] },
-                "June": { desc: "Stones tuned for balance, alignment, and harmony.", crystals: ["chakra"] },
-                "July": { desc: "Stones tuned for confidence, warmth, and healing.", crystals: ["carnelian"] },
-                "August": { desc: "Stones tuned for protection, willpower, and alignment.", crystals: ["tigereye"] },
-                "September": { desc: "Stones tuned for mental clarity, stress relief, and wisdom.", crystals: ["amethyst"] },
-                "October": { desc: "Stones tuned for love, compassion, and friendship.", crystals: ["rosequartz"] },
-                "November": { desc: "Stones tuned for wealth, success, and prosperity.", crystals: ["citrine"] },
-                "December": { desc: "Stones tuned for protection, stability, and warding off negativity.", crystals: ["sulemani"] }
+                "January": { desc: "Birth Month: January — Grounding, resilience, and endurance crystal guidance.", crystalKey: "redjasper" },
+                "February": { desc: "Birth Month: February — Tranquility, intuition, and spiritual awareness.", crystalKey: "amethyst" },
+                "March": { desc: "Birth Month: March — Courage, energy, motivation, and vital action.", crystalKey: "carnelian" },
+                "April": { desc: "Birth Month: April — Pure clarity, master healing, and intention amplification.", crystalKey: "clearquartz" },
+                "May": { desc: "Birth Month: May — Wealth luck, heart healing, and prosperous growth.", crystalKey: "greenaventurine" },
+                "June": { desc: "Birth Month: June — Intuitive balance, gentle grace, and emotional harmony.", crystalKey: "moonstone" },
+                "July": { desc: "Birth Month: July — Solar energy, optimism, leadership, and warmth.", crystalKey: "sunstone" },
+                "August": { desc: "Birth Month: August — Willpower, focus, self-confidence, and strength.", crystalKey: "tigereye" },
+                "September": { desc: "Birth Month: September — Serenity, wisdom, emotional stability, and purity.", crystalKey: "greenjade" },
+                "October": { desc: "Birth Month: October — Unconditional love, peace, and relationship alignment.", crystalKey: "rosequartz" },
+                "November": { desc: "Birth Month: November — Financial manifestation, optimism, and success.", crystalKey: "citrine" },
+                "December": { desc: "Birth Month: December — Protection against negativity, truth, and throat chakra alignment.", crystalKey: "turquoise" }
             }
         };
 
@@ -1097,61 +1149,89 @@
             document.querySelectorAll('.as_wizard_tab_btn').forEach(btn => {
                 btn.classList.remove('active');
             });
-            event.currentTarget.classList.add('active');
+            if (event && event.currentTarget) {
+                event.currentTarget.classList.add('active');
+            }
 
             document.querySelectorAll('.as_wizard_content_panel').forEach(panel => {
                 panel.classList.remove('active');
             });
-            document.getElementById('panel_' + tabId).classList.add('active');
+            const targetPanel = document.getElementById('panel_' + tabId);
+            if (targetPanel) {
+                targetPanel.classList.add('active');
+            }
         }
 
         function selectWizardItem(category, key) {
             const panel = document.getElementById('panel_' + category);
-            panel.querySelectorAll('.as_wizard_item').forEach(item => {
-                item.classList.remove('selected');
-            });
+            if (panel) {
+                panel.querySelectorAll('.as_wizard_item').forEach(item => {
+                    item.classList.remove('selected');
+                });
+            }
             
-            event.currentTarget.classList.add('selected');
+            if (event && event.currentTarget) {
+                event.currentTarget.classList.add('selected');
+            }
 
             const matchData = matches[category][key];
             if (!matchData) return;
 
-            document.getElementById('wizard_result_title').innerText = "Crystal Matches for: " + key;
+            document.getElementById('wizard_result_title').innerText = "Recommended Crystal for " + key;
             document.getElementById('wizard_result_desc').innerText = matchData.desc;
 
             const resultsContainer = document.getElementById('wizard_matched_crystals');
             resultsContainer.innerHTML = '';
 
-            matchData.crystals.forEach(cKey => {
-                const crystal = crystalDb[cKey];
-                if (!crystal) return;
+            const crystal = crystalDb[matchData.crystalKey];
+            if (!crystal) return;
 
-                const waMessage = encodeURIComponent("Hi, I used your matching wizard for " + key + " (" + category + ") and was matched with the " + crystal.name + ". I would like to inquire about buying it!");
-                const waUrl = "https://wa.me/918082937245?text=" + waMessage;
+            const waMessage = encodeURIComponent("Hi Divine Crystals 146! I selected " + key + " (" + category + ") and would like to buy/enquire about the recommended crystal: " + crystal.name);
+            const waUrl = "https://wa.me/918082937245?text=" + waMessage;
+            
+            const consultMessage = encodeURIComponent("Hi! I would like to book a consultation session regarding crystal selection for " + key + " (" + crystal.name + ")");
+            const consultUrl = "appointment.html?ref=" + encodeURIComponent(key) + "&crystal=" + encodeURIComponent(crystal.name);
 
-                const cardHtml = `
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-12" style="margin-bottom: 20px;">
-                        <div class="as_modern_product_card" style="background-color: var(--dark-color1); border: 1px solid var(--border-color); border-radius: 12px; padding: 20px; text-align: center; height:100%; display: flex; flex-direction: column; justify-content: space-between;">
-                            <div>
-                                <div class="as_product_img_wrap" style="height: 250px; overflow: hidden; border-radius: 8px; margin-bottom: 15px;">
+            const cardHtml = `
+                <div class="col-lg-8 col-md-10 col-sm-12 col-12" style="margin-bottom: 20px;">
+                    <div class="as_modern_product_card" style="background-color: var(--dark-color1); border: 1px solid var(--border-color); border-radius: 16px; padding: 25px; text-align: left; transition: all 0.3s ease; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5 col-md-5 col-sm-12 text-center" style="margin-bottom: 15px;">
+                                <div class="as_product_img_wrap" style="height: 260px; overflow: hidden; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
                                     <img src="${crystal.img}" alt="${crystal.name}" style="width: 100%; height: 100%; object-fit: cover;">
                                 </div>
-                                <h4 class="as_subheading" style="font-size: 18px; margin-bottom: 8px;">${crystal.name}</h4>
-                                <p style="font-size: 13px; line-height: 18px; color: var(--primary-color); margin-bottom: 12px;">${crystal.desc}</p>
+                                <div class="as_price" style="font-size: 22px; font-weight: bold; color: var(--secondary-color); margin-top: 12px;">${crystal.price}</div>
                             </div>
-                            <div>
-                                <div class="as_price" style="font-size: 18px; font-weight: bold; color: var(--secondary-color); margin-bottom: 12px;">${crystal.price}</div>
-                                <a href="${waUrl}" target="_blank" class="as_btn" style="padding: 8px 15px; width: 100%; display: block; border-radius: 6px; font-size: 13px;">Inquire via WhatsApp</a>
+                            <div class="col-lg-7 col-md-7 col-sm-12">
+                                <h3 class="as_subheading" style="font-size: 24px; color: var(--secondary-color); margin-bottom: 8px;">${crystal.name}</h3>
+                                <p style="font-size: 14px; line-height: 20px; color: #fff; margin-bottom: 12px;">${crystal.desc}</p>
+                                
+                                <div style="background: rgba(255,255,255,0.04); border-left: 3px solid var(--secondary-color); padding: 10px 12px; border-radius: 4px; margin-bottom: 10px;">
+                                    <strong style="color: var(--secondary-color); font-size: 13px; display: block; margin-bottom: 3px;">✨ Healing Benefits:</strong>
+                                    <span style="font-size: 13px; color: #ddd; line-height: 18px; display: block;">${crystal.benefits}</span>
+                                </div>
+
+                                <div style="background: rgba(255,255,255,0.04); border-left: 3px solid #4CAF50; padding: 10px 12px; border-radius: 4px; margin-bottom: 15px;">
+                                    <strong style="color: #4CAF50; font-size: 13px; display: block; margin-bottom: 3px;">🎯 Suitable For:</strong>
+                                    <span style="font-size: 13px; color: #ddd; line-height: 18px; display: block;">${crystal.suitableFor}</span>
+                                </div>
+
+                                <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px;">
+                                    <a href="${waUrl}" target="_blank" class="as_btn" style="padding: 10px 16px; border-radius: 6px; font-size: 13px; flex: 1; min-width: 110px; text-center; background-color: #25D366; color: #fff; border: none;">Buy Now</a>
+                                    <a href="${consultUrl}" class="as_btn" style="padding: 10px 16px; border-radius: 6px; font-size: 13px; flex: 1; min-width: 130px; text-center;">Book Consultation</a>
+                                    <a href="${waUrl}" target="_blank" class="as_btn" style="padding: 10px 16px; border-radius: 6px; font-size: 13px; width: 100%; text-center; background: transparent; border: 1px solid var(--secondary-color); color: var(--secondary-color);">WhatsApp Enquiry</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                `;
-                resultsContainer.innerHTML += cardHtml;
-            });
+                </div>
+            `;
+            resultsContainer.innerHTML = cardHtml;
             const resultsBox = document.getElementById('wizard_results');
-            resultsBox.classList.add('active');
-            
-            resultsBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            if (resultsBox) {
+                resultsBox.classList.add('active');
+                resultsBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
         }
     </script>
 </body>
